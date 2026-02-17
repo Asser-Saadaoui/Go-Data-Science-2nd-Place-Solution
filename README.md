@@ -4,7 +4,7 @@
 
 This project details the solution that secured **2nd Place** in the **Go Data Science 5.0** competition. We developed a robust Deep Learning pipeline to classify corporate text into **Environmental**, **Social**, and **Governance** (ESG) categories.
 
-The work was carried out collaboratively by **[Dalia Riahi]**, **[Asser Saadaoui]**, and **[Firas Jebeniani]**.
+The work was carried out collaboratively by **Dalia Riahi**, **Asser Saadaoui**, and **Firas Jebeniani**.
 
 ## 📚 Project Overview
 
