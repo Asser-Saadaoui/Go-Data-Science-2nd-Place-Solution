@@ -1,60 +1,62 @@
-🌌 Team Supernova - ESG Classification Solution
-🏆 2nd Place Winner | Go Data Science 5.0 Hackathon
-This project aims to develop a deep learning model to classify corporate text into Environmental, Social, and Governance (ESG) categories. The work was carried out collaboratively by Dalia Riahi, Asser Saadaoui, and Firas Jebeniani.
+# ESG-Classification-Challenge 🌍⚖️
 
-📚 Project Overview
-In this notebook, we explore a dataset containing unstructured corporate text and attempt to build predictive models for ESG classification using Deep Learning techniques. The workflow includes:
+# 🏆 2nd Place Solution - Go Data Science 5.0
 
-Data preprocessing
+This project details the solution that secured **2nd Place** in the **Go Data Science 5.0** competition. We developed a robust Deep Learning pipeline to classify corporate text into **Environmental**, **Social**, and **Governance** (ESG) categories.
 
-Exploratory Data Analysis (EDA)
+The work was carried out collaboratively by **[Dalia Riahi]**, **[Asser Saadaoui]**, and **[Firas Jebeniani]**.
 
-Feature engineering (Tokenization)
+## 📚 Project Overview
 
-Model training and evaluation
+In this notebook, we analyze unstructured corporate text data and build a sophisticated multi-label classification pipeline using advanced NLP techniques. The workflow includes:
 
-Performance comparison (Stacking Ensemble)
+* **Data Integrity Audit:** Regex-based noise profiling and removal of conflicting labels.
+* **Preprocessing:** Text normalization and tokenization using Hugging Face tools.
+* **Handling Imbalance:** Custom `WeightedTrainer` to address rare classes.
+* **Ensemble Learning:** 5-Fold Cross-Validation with DistilBERT.
+* **Stacking:** A Logistic Regression Meta-Learner to optimize final predictions.
 
-🛠️ Technologies Used
-Python
+## 🛠️ Technologies Used
 
-Jupyter Notebook
+* Python
+* Jupyter Notebook
+* PyTorch & Transformers (Hugging Face)
+* pandas, numpy
+* scikit-learn
+* matplotlib, seaborn
 
-pandas, numpy
+## 📊 Models Used
 
-matplotlib, seaborn
+* **Base Model:** DistilBERT (`distilbert-base-uncased`)
+* **Meta-Learner:** Logistic Regression (for Stacking)
+* **Architecture:** Stacking Ensemble with 5-Fold CV
 
-scikit-learn
+## 🧪 Evaluation Metrics
 
-PyTorch, Transformers
+We used standard multi-label classification metrics such as:
 
-📊 Models Used
-DistilBERT (Base Model)
+* F1-Score (Macro & Weighted)
+* Accuracy
+* Calibration Score (for the Meta-Learner)
 
-Logistic Regression (Meta-Learner)
+## 📁 Project Structure
 
-Stacking Ensemble
-
-🧪 Evaluation Metrics
-We used standard classification metrics such as:
-
-F1-Score (Macro)
-
-Accuracy
-
-Calibration Score
-
-📁 Project Structure
-Plaintext
+```text
 📦 ESG Classification
- ┣ 📓 esg-notebook.ipynb      # Main Jupyter notebook with code and analysis
- ┣ 📄 submission.csv          # Final generated predictions
- ┣ 📄 README.md               # Project documentation
- ┗ 📂 data/                   # Dataset folder
-🤝 Team Members
+ ┣ 📓 esg-notebook.ipynb      # Main Jupyter notebook with training pipeline
+ ┣ 📄 submission.csv          # Final ensemble predictions
+ ┣ 📂 data/                   # Dataset folder (train.csv, test.csv)
+ ┗ 📄 README.md
 
+```
 
-📌 Notes
-This is a hackathon project aimed at applying NLP concepts in a real-world scenario.
+## 🤝 Team Members
 
-The solution leverages a 5-Fold Cross-Validation strategy to ensure robust performance on unseen data.
+* [Firas Jebeniani]
+* [Asser Saadaoui]
+* [Dalia Riahi]
+
+## 📌 Notes
+
+* This project addresses a **Multi-Label Classification** problem where a single text can belong to multiple ESG pillars.
+* We implemented a **Stacking Strategy** to combine predictions from 5 different model splits, significantly reducing variance and improving generalization on the test set.
