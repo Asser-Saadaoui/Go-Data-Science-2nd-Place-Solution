@@ -44,7 +44,6 @@ We used standard multi-label classification metrics such as:
 ```text
 📦 ESG Classification
  ┣ 📓 esg-notebook.ipynb      # Main Jupyter notebook with training pipeline
- ┣ 📄 submission.csv          # Final ensemble predictions
  ┣ 📂 data/                   # Dataset folder (train.csv, test.csv)
  ┗ 📄 README.md
 
