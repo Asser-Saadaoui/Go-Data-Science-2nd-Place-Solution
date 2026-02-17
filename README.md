@@ -2,7 +2,7 @@
 🏆 2nd Place Winner | Go Data Science 5.0 Hackathon This repository contains the solution developed by Team Supernova that secured 2nd place in the Go Data Science 5.0 competition. We built a robust Deep Learning pipeline to classify corporate text into Environmental, Social, and Governance (ESG) categories.
 ESG-Classification-Challenge 🌍⚖️
 
-The work was carried out collaboratively by [Name 1], [Name 2], and [Name 3].
+The work was carried out collaboratively by [Dalia Riahi], [Asser Saadaoui], and [Firas Jebeniani].
 
 📚 Project Overview
 In this notebook, we analyze unstructured corporate text data and build a sophisticated multi-label classification pipeline using advanced NLP techniques. The workflow includes:
