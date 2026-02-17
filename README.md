@@ -1,66 +1,60 @@
-# Go-Data-Science-2nd-Place-Solution
-🏆 2nd Place Winner | Go Data Science 5.0 Hackathon This repository contains the solution developed by Team Supernova that secured 2nd place in the Go Data Science 5.0 competition. We built a robust Deep Learning pipeline to classify corporate text into Environmental, Social, and Governance (ESG) categories.
-ESG-Classification-Challenge 🌍⚖️
-
-The work was carried out collaboratively by [Dalia Riahi], [Asser Saadaoui], and [Firas Jebeniani].
+🌌 Team Supernova - ESG Classification Solution
+🏆 2nd Place Winner | Go Data Science 5.0 Hackathon
+This project aims to develop a deep learning model to classify corporate text into Environmental, Social, and Governance (ESG) categories. The work was carried out collaboratively by Dalia Riahi, Asser Saadaoui, and Firas Jebeniani.
 
 📚 Project Overview
-In this notebook, we analyze unstructured corporate text data and build a sophisticated multi-label classification pipeline using advanced NLP techniques. The workflow includes:
+In this notebook, we explore a dataset containing unstructured corporate text and attempt to build predictive models for ESG classification using Deep Learning techniques. The workflow includes:
 
-Data Integrity Audit: Regex-based noise profiling and removal of conflicting labels.
+Data preprocessing
 
-Preprocessing: Text normalization and tokenization using Hugging Face tools.
+Exploratory Data Analysis (EDA)
 
-Handling Imbalance: Custom WeightedTrainer to address rare classes.
+Feature engineering (Tokenization)
 
-Ensemble Learning: 5-Fold Cross-Validation with DistilBERT.
+Model training and evaluation
 
-Stacking: A Logistic Regression Meta-Learner to optimize final predictions.
+Performance comparison (Stacking Ensemble)
 
 🛠️ Technologies Used
 Python
 
 Jupyter Notebook
 
-PyTorch & Transformers (Hugging Face)
-
 pandas, numpy
-
-scikit-learn
 
 matplotlib, seaborn
 
+scikit-learn
+
+PyTorch, Transformers
+
 📊 Models Used
-Base Model: DistilBERT (distilbert-base-uncased)
+DistilBERT (Base Model)
 
-Meta-Learner: Logistic Regression (for Stacking)
+Logistic Regression (Meta-Learner)
 
-Architecture: Stacking Ensemble with 5-Fold CV
+Stacking Ensemble
 
 🧪 Evaluation Metrics
-We used standard multi-label classification metrics such as:
+We used standard classification metrics such as:
 
-F1-Score (Macro & Weighted)
+F1-Score (Macro)
 
 Accuracy
 
-Calibration Score (for the Meta-Learner)
+Calibration Score
 
 📁 Project Structure
 Plaintext
 📦 ESG Classification
- ┣ 📓 esg-notebook.ipynb      # Main Jupyter notebook with training pipeline
- ┣ 📄 submission.csv          # Final ensemble predictions
- ┣ 📂 data/                   # Dataset folder (train.csv, test.csv)
- ┗ 📄 README.md
+ ┣ 📓 esg-notebook.ipynb      # Main Jupyter notebook with code and analysis
+ ┣ 📄 submission.csv          # Final generated predictions
+ ┣ 📄 README.md               # Project documentation
+ ┗ 📂 data/                   # Dataset folder
 🤝 Team Members
-[Member Name 1]
 
-[Member Name 2]
-
-[Member Name 3]
 
 📌 Notes
-This project addresses a Multi-Label Classification problem where a single text can belong to multiple ESG pillars.
+This is a hackathon project aimed at applying NLP concepts in a real-world scenario.
 
-We implemented a Stacking Strategy to combine predictions from 5 different model splits, significantly reducing variance and improving generalization on the test set.
+The solution leverages a 5-Fold Cross-Validation strategy to ensure robust performance on unseen data.
