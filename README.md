@@ -51,9 +51,9 @@ We used standard multi-label classification metrics such as:
 
 ## 🤝 Team Members
 
-* [Firas Jebeniani]
-* [Asser Saadaoui]
-* [Dalia Riahi]
+* Firas Jebeniani
+* Asser Saadaoui
+* Dalia Riahi
 
 ## 📌 Notes
 
